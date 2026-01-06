@@ -1,0 +1,27 @@
+[project]
+name = "kiro-openai-gateway"
+version = "1.0.8"
+description = "OpenAI-compatible interface for Kiro API (AWS CodeWhisperer). Made by @jwadow"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "AGPL-3.0"}
+authors = [{name = "Jwadow"}]
+dependencies = [
+    "fastapi>=0.100",
+    "uvicorn[standard]>=0.23",
+    "httpx>=0.24",
+    "loguru>=0.7",
+    "requests>=2.31",
+    "python-dotenv>=1.0",
+    "tiktoken>=0.4",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+    "hypothesis>=6.0",
+]
+
+[tool.uv]
+no-build-isolation = true

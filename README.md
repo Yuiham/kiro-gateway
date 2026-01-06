@@ -75,12 +75,25 @@ cd kiro-gateway
 
 # Or download ZIP: Code → Download ZIP → extract → open kiro-gateway folder
 
-# Install dependencies
-pip install -r requirements.txt
-
 # Configure (see Configuration section)
 cp .env.example .env
 # Copy and edit .env with your credentials
+```
+
+#### Option 1: Using uv (Recommended)
+
+[uv](https://docs.astral.sh/uv/) is a modern, fast Python package manager.
+
+```bash
+# Start the server - uv handles dependencies automatically
+uv run main.py
+```
+
+#### Option 2: Traditional Python
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
 
 # Start the server
 python main.py
