@@ -1,7 +1,7 @@
 [project]
 name = "kiro-openai-gateway"
-version = "1.0.8"
-description = "OpenAI-compatible interface for Kiro API (AWS CodeWhisperer). Made by @jwadow"
+version = "2.0.0"
+description = "Proxy gateway for Kiro API (AWS CodeWhisperer). Made by @jwadow"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "AGPL-3.0"}
